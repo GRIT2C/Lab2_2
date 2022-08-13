@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>เเบบฟอร์มจองทัวร์</h1>
+
+    <div class="block_demo">
+    ข้อมูลทั่วไป<br>
+
+    ชื่อ-สกุล:<br>
+    <input 
+    type="text"
+    placeholder="กรอกชื่อ-สกุล"
+    required>*<br>
+
+    Email : <br>
+    <input 
+    type="email"><br>
+
+    โทรศัพท์ :<br>
+    <input type="text"
+    value="+66">*<br>
+
+    ที่อยู่: <br>
+    <textarea rows='8' cols='50'></textarea><br>
+
+    รหัสไปรษณีย์ 
+    <input 
+    type="text"
+    pattern="[0-9]{5}"><br>
+
+    รูปผู้จอง : 
+    <input type="file"><br>
+    </div>
+    <br>
+
+
+    <div class="block_demo">
+        ข้อมูลเข้าสู่ระบบ<br>
+        Username: <br>
+        <input 
+        type="text"
+        pattern="([A-Z]|_){8,}"><br>
+        password: <br>
+        <input 
+        type="text"
+        pattern="*{8,}"><br>
+        <br>
+    </div>
+    <br>
+
+
+    <div class="block_demo">
+        ข้อมูลทัวร์ที่ต้องการ<br>
+        เเพคเก็จทัวร์ :
+        <select name="tour">
+            <option value="">--select--</option>
+            <option value="thailand">Thailand</option>
+            <option value="japan">Japan</option>
+            <option value="USA">USA</option>
+            <option value="canada">Canada</option>
+        </select><br>
+
+        วันที่เดินทาง :
+        <input type="date"><br>
+
+        จำนวนผู้เดินทาง :
+        <input 
+        type="number"
+        pattern="([1-9]|10)"><br>
+
+        เน้นการท่องเที่ยวเเบบใค?<br>
+        <input type="checkbox"> ชอปปิ้ง<br>
+        <input type="checkbox"> ธรรมชาติ<br>
+        <input type="checkbox"> ทะเล <br>
+    </div><br>
+
+    ยอมรับเงื่อนไขเเละข้อตกลง 
+    <input type="radio" name="consent">I agree
+    <input type="radio" name="consent">I disagree
+    <input type="button" value="จอง">
+
+
+</body>
+</html>
